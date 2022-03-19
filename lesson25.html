@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title Lesson1-1></title>
+</head>
+<body>
+    <script>
+        /* Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        (использовать функции из задания 4) и вернуть полученное значение. */
+
+        function mathOperation(arg1, arg2, operation){
+            switch(operation){
+                case "сложение":
+                    return(arg1 + arg2)
+                case "вычитание":
+                    return(arg1 - arg2)
+                case "умножение":
+                    return(arg1 * arg2)
+                case "деление":
+                    return(arg1 / arg2)
+            }
+            
+        }
+
+        
+
+        
+        let a = +prompt("Первое число");
+        let b = +prompt("Второе число");
+        alert("Сложение = " + mathOperation(a, b, "сложение"));
+        alert("Вычитание = " + mathOperation(a, b, "вычитание"));
+        alert("Умножение = " + mathOperation(a, b, "умножение"));
+        alert("Деление = " + mathOperation(a, b, "деление"));
+    </script>
+</body>
+
+</html>
