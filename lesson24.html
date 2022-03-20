@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title Lesson1-1></title>
+</head>
+<body>
+    <script>
+        /* Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с 
+        двумя параметрами. Т.е. например, функция для сложения должна принимать два числа,
+        складывать их и возвращать результат. Обязательно использовать оператор return. */
+
+        function mathadd(x, y){
+            return(x + y);
+        }
+
+        function mathsub(x, y){
+            return(x - y);
+        }
+
+        function mathmult(x, y){
+            return(x * y);
+        }
+
+        function mathdiv(x, y){
+            return(x / y);
+        }
+
+        
+        let a = +prompt("Первое число");
+        let b = +prompt("Второе число");
+        alert("Сложение = " + mathadd(a, b));
+        alert("Вычитание = " + mathsub(a, b));
+        alert("Умножение = " + mathmult(a, b));
+        alert("Деление = " + mathdiv(a, b));
+    </script>
+</body>
+
+</html>
