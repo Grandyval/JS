@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title Lesson3-1></title>
+</head>
+<body>
+    <script>
+        //С помощью цикла while вывести все простые числа в промежутке от 0 до 100.
+        let i = 2; // 0 и 1 не являются простыми числами
+        let j = 2;
+        let test = true;
+        let result = [];
+        while(i < 100) { //перебор от 2 до 100
+            while(j < i) {  //поиск делителей
+                if ((i % j) === 0) {
+                    test = false; //если находим прерываем цикл проверки и помечаем как не простое число
+                    break;
+                }
+                else j++;
+            }
+            if (test) result.push(i); 
+            test = true;
+            i++;
+            j = 2;
+        }
+        alert(result);
+    </script>
+</body>
+
+</html>
